@@ -10,8 +10,13 @@
   grid-gap: 20px;
   max-width: 1260px;
   min-height: 500px;
+
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
@@ -21,6 +26,8 @@
   background-color: rebeccapurple;
   border: 1em solid rebeccapurple;
   margin: 2em; 
+
+
 }
 .header-bar{
   background-color: black;

@@ -2,7 +2,7 @@
 // NOTICE HOW WE BUILT OUT OUR CARD COMPONENT.
 // VISUALIZE TO YOURSELF WHAT ELSE WE NEED FOR OUR CARD COMPONENT PROPERTY WISE
 
-import React from 'react'
+import React, {useEffect} from 'react'
 /* ----------------------------
 In this file, we'll build out the JSX of how we want our Cards to LOOK and what props we want to pass into each Card!
 
@@ -22,9 +22,18 @@ ID has been done for you.
 ------------------------------*/
 
 const Card = props => {
+    //console.log(props)
+    useEffect(() => {
+        console.log(props)
+    }, [])
     return (
         <div className="card-parent">
             <p className="card-id">ID: {props.character.id} </p>
+            <p>Name: {props.character.name} </p> 
+            <img src={props.character.image}/>
+            <p>Gender: {props.character.gender}</p>
+            <p>Condition: {props.character.status}</p>
+            <p>Species: {props.character.species}</p>
             {/*We Still Need These Properties:
             - Name
             - Image
